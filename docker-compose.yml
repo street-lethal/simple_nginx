@@ -6,6 +6,7 @@ services:
     read_only: true
     volumes:
       - ./html:/usr/share/nginx/html:ro
+      - ./conf/http.conf:/etc/nginx/conf.d/http.conf:ro
       - ./nginx_cache:/var/cache/nginx
       - ./nginx_pid:/var/run
     ports:
