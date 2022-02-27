@@ -1,1 +1,3 @@
 html/*
+nginx_cache/*
+nginx_pid/*

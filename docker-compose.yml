@@ -3,8 +3,11 @@ version: '3.2'
 services:
   web:
     image: nginx:1.21-alpine
+    read_only: true
     volumes:
       - ./html:/usr/share/nginx/html:ro
+      - ./nginx_cache:/var/cache/nginx
+      - ./nginx_pid:/var/run
     ports:
       - "8080:80"
     environment:
