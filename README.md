@@ -16,7 +16,7 @@ script/init-cert.sh
 docker-compose up -d
 ```
 ## アクセス
-http://localhost:8080/index.html
+https://localhost:10443/index.html
 
 ## 終了
 ```shell
